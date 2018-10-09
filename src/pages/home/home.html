@@ -7,6 +7,9 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-buttons>
+    <button ion-button (click)="goAdduserPage()">Add new user</button>
+  </ion-buttons>
   <ion-list inset>
     <ion-item *ngFor="let user of users">
       <h2>{{user.name}}</h2>

@@ -14,6 +14,10 @@ export class HomePage {
     this.getUsers();
   }
 
+  goAdduserPage() {
+    this.navCtrl.push('AdduserPage', {});
+  }
+
   getUsers() {
     this.restProvider.getUsers()
     .then(data => {
