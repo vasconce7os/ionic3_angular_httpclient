@@ -21,7 +21,6 @@ export class RestProvider {
       this.http.get(this.apiUrl + '/users').subscribe(data => {
         resolve(data);
       }, err => {
-        console.log("deu zica");
         console.log(err);
       });
     });
